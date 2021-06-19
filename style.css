@@ -54,6 +54,8 @@ a:active {
   top: 0;
   left: 0;
   padding-top: 1rem;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .header__logo {
@@ -88,10 +90,6 @@ a:active {
 .header__logo a p {
   margin-left: 1rem;
   font-size: 2.2rem;
-}
-
-.header nav {
-  background: blue;
 }
 
 .header__menu {
