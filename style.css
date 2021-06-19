@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -24,6 +25,16 @@ p {
   font-size: 1.6rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:active {
+  color: inherit;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,12 +43,12 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -48,16 +59,39 @@ p {
 .header__logo {
   max-width: 7rem;
   height: auto;
-  margin-left: 1rem;
+  margin-left: 4rem;
 }
 
-.header__logo img {
+.header__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo a img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   opacity: 0.8;
   background-size: cover;
-  background-color: orange;
+}
+
+.header__logo a p {
+  margin-left: 1rem;
+  font-size: 2.2rem;
+}
+
+.header nav {
+  background: blue;
 }
 
 .header__menu {
@@ -70,6 +104,10 @@ p {
   font-size: 3.5rem;
   color: orange;
   font-weight: bold;
+}
+
+.panorama {
+  height: 150rem;
 }
 
 .panorama div {

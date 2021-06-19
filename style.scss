@@ -2,7 +2,10 @@
 @import "./Assets/SCSS/01.Settings/settings-global";
 @import "./Assets/SCSS/01.Settings/settings-colors";
 
+@import "./Assets/SCSS/02.Tools/tools-mixins";
+
 @import "./Assets/SCSS/04.Elements/elements-paragaphs";
+@import "./Assets/SCSS/04.Elements/elements-links";
 
 
 @import "./Assets/SCSS/06.Components/components-header";
