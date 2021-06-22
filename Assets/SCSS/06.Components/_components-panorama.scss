@@ -1,12 +1,60 @@
-.panorama{
+.panorama {
 
-    height: 150rem;
-    div{
+
+    &__wrapper {
         width: 100vw;
         height: auto;
+        position: relative;
 
-        img{
-            max-width: 100%;
-        }
+
     }
+
+    &__image {
+
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    &__container{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color: $color-white;
+        text-align: center;
+
+        .panorama__main-heading{
+            
+            white-space: nowrap;
+           
+            
+        }
+
+        .panorama__description{
+            margin: 3rem 0rem;
+            font-size: 2rem;
+        }
+
+        .panorama__buttons{
+            @include standart-flex (column, space-between, center);
+
+            .left, .right{
+                font-size: 2rem;
+                color: $color-white;
+                background-color: $color-orange;
+               white-space: nowrap;
+                padding: 1rem 2.5rem;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem; 
+            }
+
+            
+            
+        }
+        
+    }
+
+  
+   
 }

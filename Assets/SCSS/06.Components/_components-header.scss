@@ -1,4 +1,4 @@
-.header{
+.header {
 
     @include standart-flex(row, space-between, center);
     width: 100vw;
@@ -6,52 +6,51 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 1rem ;
+    z-index: 10;
+    padding-top: 1rem;
     transition: all 0.5s ease-in;
-    
+
 
     &__logo {
         max-width: 7rem;
         height: auto;
         margin-left: 4rem;
 
-        a{
+        a {
 
             @include standart-flex(row, center, center);
-            
+
 
             img {
                 width: 100%;
                 height: 100%;
-                //border-radius: 50%;
                 opacity: 0.8;
                 background-size: cover;
-                
-               // background-color: $color-orange;
-    
+             
             }
 
-            p{
+            p {
                 margin-left: 1rem;
-                
+
                 font-size: 2.2rem;
             }
         }
 
     }
 
- 
+
 
     &__menu {
         margin-right: 2rem;
         border: none;
         background-color: transparent;
-      
+
 
         .fas {
             font-size: 3.5rem;
             color: $color-orange;
             font-weight: bold;
+
         }
     }
 }

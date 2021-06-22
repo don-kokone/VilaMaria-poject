@@ -23,6 +23,7 @@ body {
 
 p {
   font-size: 1.6rem;
+  font-weight: lighter;
 }
 
 a {
@@ -33,6 +34,10 @@ a {
 a:visited,
 a:active {
   color: inherit;
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 .header {
@@ -53,6 +58,7 @@ a:active {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   padding-top: 1rem;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
@@ -104,16 +110,104 @@ a:active {
   font-weight: bold;
 }
 
-.panorama {
-  height: 150rem;
+.panorama__wrapper {
+  width: 100vw;
+  height: auto;
+  position: relative;
 }
 
-.panorama div {
-  width: 100vw;
+.panorama__image {
+  max-width: 100%;
   height: auto;
 }
 
-.panorama div img {
-  max-width: 100%;
+.panorama__container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  color: white;
+  text-align: center;
+}
+
+.panorama__container .panorama__main-heading {
+  white-space: nowrap;
+}
+
+.panorama__container .panorama__description {
+  margin: 3rem 0rem;
+  font-size: 2rem;
+}
+
+.panorama__container .panorama__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panorama__container .panorama__buttons .left, .panorama__container .panorama__buttons .right {
+  font-size: 2rem;
+  color: white;
+  background-color: orange;
+  white-space: nowrap;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  padding-top: 2rem;
+}
+
+.description__headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.description__headings-secondary {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.description__body {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.description__body p {
+  margin-bottom: 0.5rem;
+}
+
+.gallery__images {
+  width: 100%;
+}
+
+.gallery__images img {
+  max-width: 50%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

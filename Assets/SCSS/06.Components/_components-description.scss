@@ -1,0 +1,28 @@
+.description {
+    padding-top: 2rem;
+  
+
+    &__headings {
+        @include standart-flex;
+        margin-bottom: 2rem;
+
+       
+        &-secondary {
+            font-weight: lighter;
+            font-style: italic;
+
+        }
+
+    }
+
+    &__body{
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+
+        p{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+}

@@ -4,6 +4,7 @@ const bodyTag = document.querySelector('body');
 const myNav = document.querySelector ('header') ;
 
 
+
 console.log(myNav)
 
 
@@ -14,6 +15,7 @@ let scrolled = () => {
 
 addEventListener("scroll", () =>{
   myNav.style.setProperty('background', scrolled() > 10 ? "white" : "transparent");
+  
   
 })
 
