@@ -1,15 +1,19 @@
-.gallery{
-    
-    &__images{
-       width: 100%;
+.gallery {
 
-        img{
-            max-width: 50%;
+    &__images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        gap: 0.5rem;
+
+        .image {
+            max-width: 100%;
             height: auto;
+           object-fit: contain;
+        
         }
 
-        
 
-      
     }
 }
