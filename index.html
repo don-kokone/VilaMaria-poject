@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Vila Maria</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,16 +17,31 @@
     <header class="header">
 
         <div class="header__logo">
-            <a href="">
+            <a href="#">
 
                 <img id="logo" src="https://image.flaticon.com/icons/png/512/290/290208.png" alt="Logo">
                 <p>Vila Maria</p>
             </a>
         </div>
-        <nav>
-            <button class="header__menu">
-                <i class="fas fa-bars"></i>
-            </button>
+
+        <button class="header__menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navigation">
+
+            <ul>
+                <li><a href="#">Начало</a></li>
+                <li> Вили
+                    <ul>
+                        <li><a class="inner-list-item" href="#">Голяма вила</a></li>
+                        <li><a class="inner-list-item" href="#">Малка вила</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">За селото</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+
         </nav>
     </header>
 
@@ -56,10 +71,10 @@
         <section class="description">
 
             <div class="description__headings">
-                <h1 class="description__headings-main">
+                <h2 class="description__headings-main">
                     Вила Мария
-                </h1>
-                <h3 class="description__headings-secondary">село Твърдица, община Твърдица</h3>
+                </h2>
+                <h4 class="description__headings-secondary">село Твърдица, община Твърдица</h4>
             </div>
             <div class="description__body">
                 <p>
@@ -82,12 +97,21 @@
 
         <section class="gallery">
 
+            <h2 class="section-heading">Галерия</h2>
+
             <figure class="gallery__images">
-                <img class="image img_1" src="https://www.visittrentino.info/website/var/tmp/image-thumbnails/2530000/2536104/thumb__story-list-img/cascina-zeledria~-~767w.jpeg" alt="Трапезария на Вила Мария">
-               
-                <img class="image img_2" src="https://images.interhome.com/NO1886.601.1/340x225/F2D993D000ED1EDAA9EE287C8377EA88" alt="Вила Мария отвън">
-                <img class="image img_3" src="https://hotelbox.bg/wp-content/uploads/2020/04/ikonomow.jpg" alt="Всекидневната на Вила Мария">
-                <img class="image img_4" src="https://media-cdn.tripadvisor.com/media/photo-s/15/07/ec/6d/garden-for-a-great-lunch.jpg" alt="Градината на Вила Мария">
+                <img class="image img_1"
+                    src="https://www.visittrentino.info/website/var/tmp/image-thumbnails/2530000/2536104/thumb__story-list-img/cascina-zeledria~-~767w.jpeg"
+                    alt="Трапезария на Вила Мария">
+
+                <img class="image img_2"
+                    src="https://images.interhome.com/NO1886.601.1/340x225/F2D993D000ED1EDAA9EE287C8377EA88"
+                    alt="Вила Мария отвън">
+                <img class="image img_3" src="https://hotelbox.bg/wp-content/uploads/2020/04/ikonomow.jpg"
+                    alt="Всекидневната на Вила Мария">
+                <img class="image img_4"
+                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/07/ec/6d/garden-for-a-great-lunch.jpg"
+                    alt="Градината на Вила Мария">
             </figure>
 
         </section>
@@ -95,43 +119,139 @@
 
         <section class="offers">
 
-            <article class="offer">
-                <a href="">
-                <figure>
-                    <img src="http://estates.maxprogress.bg/files/avgustainvest.com/files/1550184743_gotov-tipov-proekt-idju9-582810045029441663.jpg" alt="Малка вила">
-                </figure>
+            <h2 class="section-heading"> Нашите оферти</h2>
 
-                <h2>
-                    Малка вила
-                 </h2>
-                <div>
-                
-                <p>
-                   * Всички удобства
-                </p>
-                <p>
-                   * За 4 човека
-                </p>
-                <p>
-                   * 2 стаи
-                </p>
-                <p>150 лв/вечер</p>
-            </div>
-        </a>
+            <article class="offer-card">
+                <a href="#">
+                    <figure>
+                        <img class="offer-card__image"
+                            src="http://estates.maxprogress.bg/files/avgustainvest.com/files/1550184743_gotov-tipov-proekt-idju9-582810045029441663.jpg"
+                            alt="Малка вила">
+                    </figure>
+
+                    <h3 class="offer-card__heading">
+                        Малка вила
+                    </h3>
+                    <div class="offer-card__text-wrapper">
+
+                        <p>
+                            * Всички удобства
+                        </p>
+                        <p>
+                            * За 4 човека
+                        </p>
+                        <p>
+                            * 2 стаи
+                        </p>
+                        <p>150 лв/вечер</p>
+                    </div>
+                </a>
             </article>
 
-            <article>
+            <article class="offer-card">
+                <a href="#">
+                    <figure>
+                        <img class="offer-card__image" src="https://img.vila.bg/g/4186/82495_s.jpg" alt="Голяма вила">
+                    </figure>
 
+                    <h3 class="offer-card__heading">
+                        Голяма вила
+                    </h3>
+                    <div class="offer-card__text-wrapper">
+
+                        <p>
+                            * Всички удобства
+                        </p>
+                        <p>
+                            * За 10 човека
+                        </p>
+                        <p>
+                            * 6 стаи
+                        </p>
+                        <p>350 лв/вечер</p>
+                    </div>
+                </a>
             </article>
 
-            <article>
+            <article class="offer-card">
+                <a href="#">
+                    <figure>
+                        <img class="offer-card__image"
+                            src="https://m.bgvakancia.com/common_images/offers/5490/77df515ed3678eaa94dddd8709a079e3.jpg"
+                            alt="Двете вили">
+                    </figure>
 
+                    <h3 class="offer-card__heading">
+                        Двете вили
+                    </h3>
+                    <div class="offer-card__text-wrapper">
+
+                        <p>
+                            * Всички удобства
+                        </p>
+                        <p>
+                            * За 14 човека
+                        </p>
+                        <p>
+                            * 8 стаи
+                        </p>
+                        <p>450 лв/вечер</p>
+                    </div>
+                </a>
             </article>
         </section>
 
-    </main>
-    <footer>
+        <section class="contact-us">
 
+            <h2 class="section-heading">Свържете се с нас</h2>
+            <form action="" class="contact-us__form">
+
+                <input placeholder="Вашето име" type="text" name="" id="">
+
+
+                <input placeholder="Телефон" type="tel" name="" id="">
+
+                <textarea placeholder="Съобщение" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+
+        <address class="footer__address">
+            <p>
+                община Твърдица
+            </p>
+            <p>
+                село Твърдица
+            </p>
+            <p>
+                улица "Първа" №49
+            </p>
+        </address>
+
+
+        <div class="footer__contact">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-brands fa-facebook-square"></i></a>
+            </div>
+            <div class="phone-and-mail">
+                <a href="tel:088456000"> +359 088 456 000</a>
+                <address>
+                    <a href="mailto:vilamaria@gmail.com">vilamaria@gmail.com</a>
+                </address>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
+            width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <div class="footer__creater-info">
+            &#169 Made by me 2021
+        </div>
     </footer>
 
     <script src="./Assets/Javascript/changing-menu-color.js"></script>

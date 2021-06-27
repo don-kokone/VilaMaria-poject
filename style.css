@@ -22,8 +22,9 @@ body {
 }
 
 p {
-  font-size: 1.6rem;
-  font-weight: lighter;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 a {
@@ -37,7 +38,47 @@ a:active {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 601px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
+li {
+  list-style-type: none;
 }
 
 .header {
@@ -56,8 +97,8 @@ h1 {
           align-items: center;
   width: 100vw;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   z-index: 10;
   padding-top: 1rem;
   -webkit-transition: all 0.5s ease-in;
@@ -218,27 +259,58 @@ h1 {
      object-fit: contain;
 }
 
-.offers {
-  padding-top: 2rem;
+.offers .offer-card {
+  margin-top: 1rem;
 }
 
-.offers .offer {
+.contact-us {
+  width: 100vw;
+}
+
+.contact-us__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+.contact-us__form input, .contact-us__form textarea {
+  width: 90%;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid black;
+}
+
+.offer-card {
   position: relative;
   width: 95vw;
   margin: 0 auto;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
-.offers .offer img {
+.offer-card__image {
   width: 90%;
   -webkit-transform: translateX(5%);
           transform: translateX(5%);
   padding-top: 3rem;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
-.offers .offer h2 {
+.offer-card__heading {
   position: absolute;
   top: 0;
   left: 50%;
@@ -247,7 +319,7 @@ h1 {
           transform: translateX(-50%);
 }
 
-.offers .offer div {
+.offer-card__text-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,5 +334,107 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   color: grey;
+}
+
+.section-heading {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.footer {
+  background-color: #E8E8E8;
+  margin-top: 2rem;
+}
+
+.footer__address {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer__contact {
+  margin: 2rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__contact .social-icons .fab {
+  font-size: 2.5rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.footer__contact .phone-and-mail {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+.footer__creater-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: fixed;
+  z-index: 11;
+  top: 0%;
+  left: 0%;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navigation.active li {
+  font-size: 2rem;
+  margin: 5rem 2rem;
+  font-weight: 700;
+}
+
+.navigation.active li .inner-list-item {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */

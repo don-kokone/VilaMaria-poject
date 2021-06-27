@@ -1,0 +1,27 @@
+.offer-card {
+    position: relative;
+    width: 95vw;
+    margin: 0 auto;
+    border: 2px solid $color-black;
+    border-radius: 0.5rem;
+
+    &__image {
+        width: 90%;
+        transform: translateX(5%);
+        padding-top: 3rem;
+        border-radius: 1rem;
+    }
+
+    &__heading {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        font-size: 2rem;
+        transform: translateX(-50%);
+    }
+
+    &__text-wrapper{
+        @include standart-flex;
+        color: $color-grey;
+    }
+}
