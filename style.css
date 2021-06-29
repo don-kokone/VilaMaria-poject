@@ -15,6 +15,7 @@
 html {
   font-size: 62.5%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -149,6 +150,8 @@ li {
   font-size: 3.5rem;
   color: orange;
   font-weight: bold;
+  z-index: 25;
+  position: relative;
 }
 
 .panorama__wrapper {
@@ -401,7 +404,10 @@ li {
 }
 
 .navigation {
-  display: none;
+  position: fixed;
+  z-index: 11;
+  top: 0%;
+  left: 150%;
 }
 
 .navigation.active {
@@ -425,12 +431,17 @@ li {
   background-color: white;
   height: 100vh;
   width: 100vw;
+  overflow-y: hidden;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 .navigation.active li {
   font-size: 2rem;
-  margin: 5rem 2rem;
+  margin: 3rem 2rem;
   font-weight: 700;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .navigation.active li .inner-list-item {
