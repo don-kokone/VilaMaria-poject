@@ -154,6 +154,14 @@ li {
   position: relative;
 }
 
+.header__menu .fa-times {
+  font-size: 4rem;
+}
+
+.header__menu .fas:not(.active) {
+  display: none;
+}
+
 .panorama__wrapper {
   width: 100vw;
   height: auto;
@@ -407,7 +415,7 @@ li {
   position: fixed;
   z-index: 11;
   top: 0%;
-  left: 150%;
+  right: 150%;
 }
 
 .navigation.active {
@@ -427,7 +435,7 @@ li {
   position: fixed;
   z-index: 11;
   top: 0%;
-  left: 0%;
+  right: 0%;
   background-color: white;
   height: 100vh;
   width: 100vw;
@@ -440,8 +448,6 @@ li {
   font-size: 2rem;
   margin: 3rem 2rem;
   font-weight: 700;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 .navigation.active li .inner-list-item {

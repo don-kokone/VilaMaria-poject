@@ -51,7 +51,22 @@
             font-weight: bold;
             z-index: 25;
             position: relative;
-
+       
+            
         }
+
+        .fa-times{
+            font-size: 4rem;
+            
+        }
+
+
+        .fas:not(.active){
+            display: none;
+            
+            
+        }
+
+        
     }
 }

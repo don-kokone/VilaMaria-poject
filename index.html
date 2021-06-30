@@ -25,17 +25,19 @@
         </div>
 
         <button class="header__menu" id="menu-button">
-            <i class="fas fa-bars"></i>
+            <i id="bars-icon" class=" active fas fa-bars"></i>
+            <i id="close-icon" class="fas fa-times"></i>
+            
         </button>
-
+        
         <nav class="navigation" id="navigation">
 
             <ul>
                 <li><a href="#">Начало</a></li>
-                <li> Вили
+                <li > Вили 
                     <ul>
-                        <li><a class="inner-list-item" href="#">Голяма вила</a></li>
-                        <li><a class="inner-list-item" href="#">Малка вила</a></li>
+                        <li> <a class="inner-list-item" href="#">Голяма вила</a></li>
+                        <li> <a class="inner-list-item" href="#">Малка вила</a></li>
                     </ul>
                 </li>
                 <li><a href="#">За селото</a></li>
@@ -46,6 +48,8 @@
     </header>
 
     <main>
+
+        
 
         <section class="panorama">
             <div class="panorama-wrapper">
@@ -69,7 +73,6 @@
         </section>
 
         <section class="description">
-
             <div class="description__headings">
                 <h2 class="description__headings-main">
                     Вила Мария
@@ -256,6 +259,7 @@
 
     <script src="./Assets/Javascript/changing-menu-color.js"></script>
     <script src="./Assets/Javascript/menu-popup.js"></script>
+    <script src="./Assets/Javascript/toggle-menu-icons.js"></script>
     <noscript>Sorry, but your browser don't support javascript</noscript>
 </body>
 
