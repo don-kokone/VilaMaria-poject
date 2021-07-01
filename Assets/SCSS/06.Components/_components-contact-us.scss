@@ -1,6 +1,7 @@
 .contact-us{
 
     width: 100vw;
+    padding-top: 5rem;
 
     &__form{
         @include standart-flex(column, flex-start, flex-start);
@@ -19,3 +20,4 @@
 
     }
 }
+

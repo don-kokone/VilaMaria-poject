@@ -51,20 +51,19 @@
             font-weight: bold;
             z-index: 25;
             position: relative;
-       
+            transition: all 1s ease;
             
         }
 
         .fa-times{
             font-size: 4rem;
             
+            
         }
 
 
         .fas:not(.active){
             display: none;
-            
-            
         }
 
         
