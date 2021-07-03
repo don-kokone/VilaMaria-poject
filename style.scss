@@ -8,6 +8,7 @@
 @import "./Assets/SCSS/04.Elements/elements-links";
 @import "./Assets/SCSS/04.Elements/elements-headings";
 @import "./Assets/SCSS/04.Elements/elements-lists";
+@import "./Assets/SCSS/04.Elements/element-button";
 
 
 @import "./Assets/SCSS/06.Components/components-header";
@@ -15,8 +16,10 @@
 @import "./Assets/SCSS/06.Components/components-description";
 @import "./Assets/SCSS/06.Components/components-gallery";
 @import "./Assets/SCSS/06.Components/components-offers";
-@import "./Assets/SCSS/06.Components/components-contact-us";
 @import "./Assets/SCSS/06.Components/components-offer-card";
 @import "./Assets/SCSS/06.Components/components-section-heading";
 @import "./Assets/SCSS/06.Components/components-footer";
 @import "./Assets/SCSS/06.Components/components-navigation";
+
+@import "./Assets/SCSS/Pages/page-contact-us";
+@import "./Assets/SCSS/Pages/page-small-villa";

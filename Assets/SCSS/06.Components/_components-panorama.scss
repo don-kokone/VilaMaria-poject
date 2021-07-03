@@ -40,12 +40,6 @@
             @include standart-flex (column, space-between, center);
 
             .left, .right{
-                font-size: 2rem;
-                color: $color-white;
-                background-color: $color-orange;
-               white-space: nowrap;
-                padding: 1rem 2.5rem;
-                border-radius: 0.5rem;
                 margin-bottom: 1rem; 
             }
 
