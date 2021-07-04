@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="header static">
 
@@ -23,21 +25,21 @@
         <button class="header__menu" id="menu-button">
             <i id="bars-icon" class="active fas fa-bars"></i>
             <i id="close-icon" class="fas fa-times"></i>
-            
+
         </button>
-        
+
         <nav class="navigation" id="navigation">
 
             <ul>
                 <li><a class="link" href="./index.html">Начало</a></li>
-                <li > Вили 
+                <li> Вили
                     <ul>
                         <li> <a class="link inner-list-item" href="#">Голяма вила</a></li>
-                        <li> <a class="link inner-list-item" href="#">Малка вила</a></li>
+                        <li> <a class="link inner-list-item" href="./small-villa.html">Малка вила</a></li>
                     </ul>
                 </li>
                 <li><a class="link" href="#">За селото</a></li>
-                <li><a class="link" href="#">Контакти</a></li>
+                <li><a class="link" href="./contact-page.html">Контакти</a></li>
             </ul>
 
         </nav>
@@ -48,15 +50,83 @@
 
         <section class="small-villa-section">
 
-        <h2 class="section-heading">Малка вила</h2>
+            <h2 class="section-heading">Малка вила</h2>
 
-        <figure class="gallery__images">
-            <img class="image " src="https://lisetsvilla.com/images/small_villa_compressed/small_villa1.jpg" alt="Интериор на малката вила">
-            <img class="image " src="https://lisetsvilla.com/images/small_villa_compressed/small_villa13.jpg" alt="Малката вила отвън">
-            <img class="image " src="https://lisetsvilla.com/images/small_villa_compressed/small_villa2.jpg" alt="Интериор на малката вила">
-            <img class="image " src="https://lisetsvilla.com/images/small_villa_compressed/small_villa3.jpg" alt="Интериор на малката вила">
-        </figure>
-    </section>
+            <figure class="image-gallery">
+                <img class="image" src="https://lisetsvilla.com/images/small_villa_compressed/small_villa1.jpg"
+                    alt="Интериор на малката вила">
+                <img class="image" src="https://lisetsvilla.com/images/small_villa_compressed/small_villa13.jpg"
+                    alt="Малката вила отвън">
+                <img class="image" src="https://lisetsvilla.com/images/small_villa_compressed/small_villa2.jpg"
+                    alt="Интериор на малката вила">
+                <img class="image" src="https://lisetsvilla.com/images/small_villa_compressed/small_villa3.jpg"
+                    alt="Интериор на малката вила">
+            </figure>
+
+            <div class="info-wrapper">
+                <div class="details">
+
+                    <h3>Подробности</h3>
+
+                    <div class="component">
+                        <p>Етажи</p>
+                        <p>2</p>
+                    </div>
+
+                    <div class="component">
+                        <p>Стаи</p>
+                        <p>2</p>
+                    </div>
+
+                    <div class="component">
+                        <p>Капацитет</p>
+                        <p>4 човека</p>
+                    </div>
+
+                    <div class="component">
+                        <p>Тоалетна + баня</p>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Накратко</h3>
+                    <p>Отпуснете се, живейте пълноценно. Насладете се на комфорт и усамотение в малката вила.
+                        Къща на два етажа с вместимост за 4 човека.</p>
+                    <p>
+                        Изглед от панормна тераса към града и планините, който е
+                        екстра бонус към цялостното преживяване.
+                    </p>
+                    <p>
+                        Всеки етаж е обзаведен с баня, тоалетна, както и
+                        телевизор
+                        с плосък екран. Малката вила има постоянен достъп до топла вода и отопление. Вторият
+                        етаж
+                        разполага със спалня, докато първият е с две единични легла.</p>
+                    <p> Усетете комфорта. Подарете си
+                        усещане
+                        за уют и пълноценен живот.</p>
+                </div>
+
+                <div class="amenities">
+                    <h3>Удобства</h3>
+                    <p> <i class="fa fa-wifi"> </i> Wi-Fi</p>
+                    <p> <i class="fa fa-car"></i> Паркинг</p>
+                    <p> <i class="far fa-clone"></i>Балкон</p>
+                    <p> <i class="far fa-clone"></i>Панормна тераса</p>
+                    <p> <i class="far fa-clone"></i>Хавлии</p>
+                    <p> <i class="far fa-clone"></i>Ютия</p>
+                    <p> <i class="far fa-clone"></i>Сешоар</p>
+                    <p> <i class="fa fa-tv"></i>Кабелна телевизия</p>
+                    <p> <i class="far fa-clone"></i>Консумативи</p>
+                    <p> <i class="fa fa-baby"></i>Бебешко креватче</p>
+                    <p> <i class="far fa-clone"></i>Външен басейн</p>
+                    <p> <i class="far fa-clone"></i>Барбекю</p>
+                </div>
+                <p class="price">150 лв./ вечер</p>
+            </div>
+
+            <button class="button"> <a href="./contact-page.html">За резервации</a> </button>
+        </section>
     </main>
 
 
@@ -99,7 +169,8 @@
     </footer>
 
     <script src="./Assets/Javascript/menu-popup.js"></script>
-   
+
     <noscript>Sorry, but your browser don't support javascript</noscript>
 </body>
+
 </html>

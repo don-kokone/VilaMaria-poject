@@ -1,0 +1,57 @@
+.info-wrapper {
+    margin: 0 1rem;
+    text-align: left;
+    line-height: 2;
+
+    .details {
+
+        .component {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid $color-light-grey;
+
+            p:nth-child(odd) {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            p:nth-child(even) {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+
+
+        }
+
+
+
+    }
+
+    .description {
+        text-align: justify;
+    }
+
+    .amenities {
+
+
+        p {
+            font-size: 1.7rem;
+            border-bottom: 1px solid $color-light-grey;
+            padding: 0.5rem 0;
+
+            i {
+                margin-right: 0.5rem;
+                font-size: 1.4rem;
+            }
+
+        }
+
+    }
+
+    .price{
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        text-align: center;
+        font-weight: 700;
+    }
+}
