@@ -478,6 +478,31 @@ li {
   font-weight: 700;
 }
 
+.entertainment-card {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 1rem;
+}
+
+.entertainment-card__image {
+  width: 100px;
+  width: auto;
+}
+
+.entertainment-card__image img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.entertainment-card__heading {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.entertainment-card__description {
+  text-align: justify;
+  margin: 0 1rem;
+}
+
 .static::before {
   content: '';
   background-color: white;
@@ -546,5 +571,54 @@ li {
 
 .small-villa-section .section-heading {
   padding-top: 8rem;
+}
+
+.big-villa-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big-villa-section .section-heading {
+  padding-top: 8rem;
+}
+
+.village-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.village-description .section-heading {
+  padding-top: 8rem;
+}
+
+.village-description p {
+  text-align: justify;
+  margin: 0 1rem;
+}
+
+.entertainment-card {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.entertainment-card {
+
+    border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 1rem;
+
+    &__image {
+
+        width: 100px;
+        width: auto;
+
+        img {
+            max-width: 100%;
+            max-height: auto;
+        }
+
+    }
+
+    &__heading {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    &__description {
+        text-align: justify;
+        margin: 0 1rem;
+    }
+}

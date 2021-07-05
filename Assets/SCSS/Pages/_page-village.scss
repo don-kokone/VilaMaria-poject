@@ -1,0 +1,21 @@
+
+.village-description{
+
+
+@include standart-flex;
+
+    .section-heading{
+
+        padding-top: 8rem;
+    }
+
+    p{
+        text-align: justify;
+        margin: 0 1rem;
+    }
+
+}
+
+.entertainment-card{
+    margin-bottom: 2rem;
+}
