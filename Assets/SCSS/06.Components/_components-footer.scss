@@ -10,22 +10,30 @@
     &__contact {
         margin: 2rem 0rem;
 
-        @include standart-flex(row, space-between, center);
+        @include standart-flex(column, space-around, center);
 
         .social-icons {
 
-            @include standart-flex(row, flex-start, center);
-
+            margin-top: 2rem;
+        
             .fab {
                 font-size: 2.5rem;
                 color: $color-black;
-                margin-left: 1rem;
+                padding: 0 1rem;
+            
+              
             }
         }
 
         .phone-and-mail{
             font-size: 1.3rem;
             margin-right: 1rem;
+            text-align: center;
+
+            i{
+                font-size: 1.6rem;
+                padding-right: 0.5rem;
+            }
  
         }
 

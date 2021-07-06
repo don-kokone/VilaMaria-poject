@@ -27,14 +27,14 @@
         <button class="header__menu" id="menu-button">
             <i id="bars-icon" class="active fas fa-bars"></i>
             <i id="close-icon" class="fas fa-times"></i>
-            
+
         </button>
-        
+
         <nav class="navigation" id="navigation">
 
             <ul>
                 <li><a class="link" href="#">Начало</a></li>
-                <li > Вили 
+                <li> Вили
                     <ul>
                         <li> <a class="link inner-list-item" href="./big-villa.html">Голяма вила</a></li>
                         <li> <a class="link inner-list-item" href="./small-villa.html">Малка вила</a></li>
@@ -49,7 +49,7 @@
 
     <main>
 
-        
+
 
         <section class="panorama">
             <div class="panorama-wrapper">
@@ -58,7 +58,7 @@
                     <p class="panorama__description"> Къща за гости</p>
 
                     <div class="panorama__buttons">
-                        <a href="#" class="button left">Офери</a>
+                        <a href="#offers" class="button left" onclick="scrollToElement()">Офери</a>
                         <a href="#" class="button right">Виж ни</a>
                     </div>
 
@@ -120,7 +120,7 @@
         </section>
 
 
-        <section class="offers">
+        <section class="offers" id="offers">
 
             <h2 class="section-heading"> Нашите оферти</h2>
 
@@ -204,10 +204,17 @@
             </article>
         </section>
 
-       
+
+        
+
     </main>
     <footer class="footer">
 
+        <section class="scroll-up">
+            
+            <button><i class="fas fa-arrow-up"></i></button> 
+     
+     </section>
 
         <address class="footer__address">
             <p>
@@ -223,15 +230,17 @@
 
 
         <div class="footer__contact">
+
+            <div class="phone-and-mail">
+                <a href="tel:088456000"> <i class="fas fa-phone"></i> +359 088 456 000</a>
+                <address>
+                    <a href="mailto:vilamaria@gmail.com"> <i class="fas fa-envelope"></i>vilamaria@gmail.com</a>
+                </address>
+            </div>
+
             <div class="social-icons">
                 <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-brands fa-facebook-square"></i></a>
-            </div>
-            <div class="phone-and-mail">
-                <a href="tel:088456000"> +359 088 456 000</a>
-                <address>
-                    <a href="mailto:vilamaria@gmail.com">vilamaria@gmail.com</a>
-                </address>
             </div>
         </div>
         <iframe
@@ -246,7 +255,8 @@
 
     <script src="./Assets/Javascript/changing-menu-color.js"></script>
     <script src="./Assets/Javascript/menu-popup.js"></script>
-   
+    <script src="./Assets/Javascript/smooth-scroll.js"></script>
+
     <noscript>Sorry, but your browser don't support javascript</noscript>
 </body>
 
