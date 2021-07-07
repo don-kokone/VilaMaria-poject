@@ -39,8 +39,22 @@
 
     }
 
+    &__map{
+  
+        max-width: 100vw;
+        height: auto;
+        
+        iframe{
+            width: 100%;
+            height: auto;
+
+        }
+       
+    }
+
     &__creater-info{
         text-align: center;
         margin-top: 1rem;
     }
 }
+

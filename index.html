@@ -15,7 +15,7 @@
 
 <body>
     <header class="header ">
-
+        
         <div class="header__logo">
             <a href="#">
 
@@ -29,7 +29,7 @@
             <i id="close-icon" class="fas fa-times"></i>
 
         </button>
-
+        
         <nav class="navigation" id="navigation">
 
             <ul>
@@ -46,7 +46,7 @@
 
         </nav>
     </header>
-
+    <div id="scrollUp"></div>
     <main>
 
 
@@ -58,7 +58,7 @@
                     <p class="panorama__description"> Къща за гости</p>
 
                     <div class="panorama__buttons">
-                        <a href="#offers" class="button left" onclick="scrollToElement()">Офери</a>
+                        <a href="#offers" class="button left" onclick="scrollDown()">Офери</a>
                         <a href="#" class="button right">Виж ни</a>
                     </div>
 
@@ -71,7 +71,7 @@
 
 
         </section>
-
+        
         <section class="description">
             <div class="description__headings">
                 <h2 class="description__headings-main">
@@ -205,16 +205,16 @@
         </section>
 
 
-        
+
 
     </main>
     <footer class="footer">
 
         <section class="scroll-up">
-            
-            <button><i class="fas fa-arrow-up"></i></button> 
-     
-     </section>
+
+            <a onclick="scrollUp()"><i  class="fas fa-arrow-up"></i></a>
+
+        </section>
 
         <address class="footer__address">
             <p>
@@ -243,10 +243,12 @@
                 <a href="#"><i class="fab fa-brands fa-facebook-square"></i></a>
             </div>
         </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
-            width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
+        <div class="footer__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
 
         <div class="footer__creater-info">
             &#169 Made by me 2021

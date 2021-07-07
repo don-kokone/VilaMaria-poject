@@ -1,8 +1,15 @@
-let scrollTo = document.getElementById("offers")
+let scrollToOffers = document.getElementById("offers")
+let scrollToHeader = document.getElementById("scrollUp")
 
-function scrollToElement (){
+function scrollDown (){
 
-    scrollTo.scrollIntoView({behavior:"smooth", top: -100, left: 0})
+    scrollToOffers.scrollIntoView({behavior:"smooth"})
 }
 
+
+function scrollUp (){
+    
+
+    scrollToHeader.scrollIntoView()
+}
 
