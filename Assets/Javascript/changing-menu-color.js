@@ -1,5 +1,3 @@
-
-
 const bodyTag = document.querySelector('body');
 const myNav = document.querySelector ('header') ;
 

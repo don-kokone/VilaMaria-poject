@@ -1,5 +1,5 @@
 let scrollToOffers = document.getElementById("offers")
-let scrollToHeader = document.getElementById("scrollUp")
+let scrollToHeader = document.getElementById("scrollUpToThisPosition")
 
 function scrollDown (){
 

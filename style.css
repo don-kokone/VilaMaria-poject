@@ -509,11 +509,19 @@ li {
 
 .scroll-up {
   position: relative;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .scroll-up a {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2;
   border: none;
   background-color: transparent;
+  display: none;
 }
 
 .scroll-up a i {
@@ -521,9 +529,6 @@ li {
   padding: 1rem;
   background-color: orange;
   border-radius: 50%;
-  position: absolute;
-  top: 30%;
-  right: 2%;
 }
 
 .static::before {

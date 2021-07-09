@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/290/290208.png"/>
 
 
 </head>
@@ -46,7 +47,9 @@
 
         </nav>
     </header>
-    <div id="scrollUp"></div>
+
+    <div id="scrollUpToThisPosition"></div>
+
     <main>
 
 
@@ -210,9 +213,9 @@
     </main>
     <footer class="footer">
 
-        <section class="scroll-up">
+        <section class="scroll-up" >
 
-            <a onclick="scrollUp()"><i  class="fas fa-arrow-up"></i></a>
+            <a id="scroll_up-button" onclick="scrollUp()"><i  class="fas fa-arrow-up"></i></a>
 
         </section>
 
@@ -258,6 +261,7 @@
     <script src="./Assets/Javascript/changing-menu-color.js"></script>
     <script src="./Assets/Javascript/menu-popup.js"></script>
     <script src="./Assets/Javascript/smooth-scroll.js"></script>
+    <script src="./Assets/Javascript/scroll_up-button.js"></script>
 
     <noscript>Sorry, but your browser don't support javascript</noscript>
 </body>
