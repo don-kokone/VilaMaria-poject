@@ -16,7 +16,7 @@
 
     }
 
-    &__container{
+    &__container {
         position: absolute;
         top: 0%;
         left: 50%;
@@ -24,31 +24,54 @@
         color: $color-white;
         text-align: center;
 
-        .panorama__main-heading{
-            
+        .panorama__main-heading {
+
             white-space: nowrap;
-           
-            
         }
 
-        .panorama__description{
+        .panorama__description {
             margin: 3rem 0rem;
             font-size: 2rem;
         }
 
-        .panorama__buttons{
+        .panorama__buttons {
             @include standart-flex (column, space-between, center);
 
-            .left, .right{
-                margin-bottom: 1rem; 
+            .left,
+            .right {
+                margin-bottom: 1rem;
             }
 
-            
-            
+
+
         }
-        
+
     }
 
-  
-   
+}
+
+@media screen and (min-width: 768px) {
+
+    .panorama {
+
+
+        .panorama__buttons {
+            @include standart-flex (row, space-around, center);
+
+        }
+
+
+        .panorama__container{
+
+            top: 10%;
+    
+        }
+
+
+        .panorama__description{
+
+            font-size: 2.7rem;
+            text-shadow: 0px 3px 4px $color-grey;
+        }
+    }
 }

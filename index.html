@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/290/290208.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/290/290208.png" />
 
 
 </head>
 
 <body>
     <header class="header ">
-        
+
         <div class="header__logo">
             <a href="#">
 
@@ -30,7 +30,7 @@
             <i id="close-icon" class="fas fa-times"></i>
 
         </button>
-        
+
         <nav class="navigation" id="navigation">
 
             <ul>
@@ -74,7 +74,7 @@
 
 
         </section>
-        
+
         <section class="description">
             <div class="description__headings">
                 <h2 class="description__headings-main">
@@ -213,45 +213,54 @@
     </main>
     <footer class="footer">
 
-        <section class="scroll-up" >
+        <section class="scroll-up">
 
-            <a id="scroll_up-button" onclick="scrollUp()"><i  class="fas fa-arrow-up"></i></a>
+            <a id="scroll_up-button" onclick="scrollUp()"><i class="fas fa-arrow-up"></i></a>
 
         </section>
 
-        <address class="footer__address">
-            <p>
-                община Твърдица
-            </p>
-            <p>
-                село Твърдица
-            </p>
-            <p>
-                улица "Първа" №49
-            </p>
-        </address>
+        <div class="footer-breakpoint-wrapper">
 
+            <div class="group">
 
-        <div class="footer__contact">
-
-            <div class="phone-and-mail">
-                <a href="tel:088456000"> <i class="fas fa-phone"></i> +359 088 456 000</a>
-                <address>
-                    <a href="mailto:vilamaria@gmail.com"> <i class="fas fa-envelope"></i>vilamaria@gmail.com</a>
+                <address class="footer__address">
+                    <p>
+                        община Твърдица
+                    </p>
+                    <p>
+                        село Твърдица
+                    </p>
+                    <p>
+                        улица "Първа" №49
+                    </p>
                 </address>
+
+
+                <div class="footer__contact">
+
+                    <div class="phone-and-mail">
+                        <a href="tel:088456000"> <i class="fas fa-phone"></i> +359 088 456 000</a>
+                        <address>
+                            <a href="mailto:vilamaria@gmail.com"> <i class="fas fa-envelope"></i>vilamaria@gmail.com</a>
+                        </address>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-brands fa-facebook-square"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-brands fa-facebook-square"></i></a>
+            <div class="footer__map group">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
-        <div class="footer__map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
-                style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-        </div>
+
+
 
         <div class="footer__creater-info">
             &#169 Made by me 2021
