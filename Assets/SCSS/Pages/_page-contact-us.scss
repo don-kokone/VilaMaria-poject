@@ -37,3 +37,15 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .contact-us{
+
+        &__form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+           
+        }
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/290/290208.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="https://image.flaticon.com/icons/png/512/290/290208.png" />
 
 </head>
+
 <body>
     <header class="header static">
 
@@ -25,14 +27,14 @@
         <button class="header__menu" id="menu-button">
             <i id="bars-icon" class="active fas fa-bars"></i>
             <i id="close-icon" class="fas fa-times"></i>
-            
+
         </button>
-        
+
         <nav class="navigation" id="navigation">
 
             <ul>
                 <li><a class="link" href="./index.html">Начало</a></li>
-                <li > Вили 
+                <li> Вили
                     <ul>
                         <li> <a class="link inner-list-item" href="./big-villa.html">Голяма вила</a></li>
                         <li> <a class="link inner-list-item" href="./small-villa.html">Малка вила</a></li>
@@ -46,27 +48,35 @@
     </header>
 
     <div id="scrollUpToThisPosition"></div>
-    
+
     <main>
         <section class="contact-us">
 
             <h2 class="section-heading">Свържете се с нас</h2>
             <form action="" class="contact-us__form">
 
-                <input placeholder="Вашето име" type="text" name="" id="">
+                <div class="group">
 
-                <input placeholder="Телефон" type="tel" name="" id="">
+                    <input placeholder="Вашето име" type="text" name="" id="">
 
-                <select name="" id=""> 
-                    <option value="" disabled selected hidden>Какво Ви интересува?</option>
-                    <option value="">Голяма вила</option>
-                    <option value="">Малка вила</option>
-                    <option value="">Двете вили</option>
-                    <option value="">Друго</option>
+                    <input placeholder="Телефон" type="tel" name="" id="">
 
-                </select>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Какво Ви интересува?</option>
+                        <option value="">Голяма вила</option>
+                        <option value="">Малка вила</option>
+                        <option value="">Двете вили</option>
+                        <option value="">Друго</option>
 
-                <textarea placeholder="Съобщение" cols="30" rows="10"></textarea>
+                    </select>
+                </div>
+
+                <div class="group">
+
+                    <textarea placeholder="Съобщение" cols="30" rows="10"></textarea>
+                </div>
+
+
             </form>
             <button class="button">Изпрати</button>
         </section>
@@ -129,11 +139,12 @@
         </div>
     </footer>
 
- 
+
     <script src="./Assets/Javascript/menu-popup.js"></script>
     <script src="./Assets/Javascript/smooth-scroll.js"></script>
     <script src="./Assets/Javascript/scroll_up-button.js"></script>
-   
+
     <noscript>Sorry, but your browser don't support javascript</noscript>
 </body>
+
 </html>
