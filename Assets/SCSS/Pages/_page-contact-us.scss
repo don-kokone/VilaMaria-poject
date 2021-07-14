@@ -30,6 +30,10 @@
         }
 
     }
+
+    .contact-middle-display{
+        display: none;
+    }
     .button{
     
        margin: 2rem auto;
@@ -40,12 +44,39 @@
 @media screen and (min-width: 768px) {
     .contact-us{
 
-        &__form{
+        .breakpoint-wrapper{
+
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-           
+            grid-template-rows: 1fr 1fr;
+            place-items:  center;
+            grid-template-areas:   
+            "top-left top-right"
+            "bottom-left bottom-right";
+
+            .first-group{
+                grid-area: top-left;
+            }
+
+            .second-group{
+                grid-area: bottom-left;
+            }
+
+            .addresses-middle-display{
+                grid-area: top-right;
+            }
+
+
+            .map-middle-display{
+                grid-area: bottom-right;
+            }
+
+            .contact-middle-display{
+                display: inline-block;
+                
+            }
         }
+
+        
     }
 }

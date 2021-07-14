@@ -693,23 +693,48 @@ li {
   border: 2px solid black;
 }
 
+.contact-us .contact-middle-display {
+  display: none;
+}
+
 .contact-us .button {
   margin: 2rem auto;
   display: block;
 }
 
 @media screen and (min-width: 768px) {
-  .contact-us__form {
+  .contact-us .breakpoint-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    place-items: center;
+        grid-template-areas: "top-left top-right" "bottom-left bottom-right";
+  }
+  .contact-us .breakpoint-wrapper .first-group {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: top-left;
+  }
+  .contact-us .breakpoint-wrapper .second-group {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: bottom-left;
+  }
+  .contact-us .breakpoint-wrapper .addresses-middle-display {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: top-right;
+  }
+  .contact-us .breakpoint-wrapper .map-middle-display {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: bottom-right;
+  }
+  .contact-us .breakpoint-wrapper .contact-middle-display {
+    display: inline-block;
   }
 }
 

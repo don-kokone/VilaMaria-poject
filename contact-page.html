@@ -53,31 +53,67 @@
         <section class="contact-us">
 
             <h2 class="section-heading">Свържете се с нас</h2>
-            <form action="" class="contact-us__form">
 
-                <div class="group">
+            <div class="breakpoint-wrapper">
+                <form action="" class="contact-us__form">
 
-                    <input placeholder="Вашето име" type="text" name="" id="">
+                    <div class="first-group">
 
-                    <input placeholder="Телефон" type="tel" name="" id="">
+                        <input placeholder="Вашето име" type="text" name="" id="">
 
-                    <select name="" id="">
-                        <option value="" disabled selected hidden>Какво Ви интересува?</option>
-                        <option value="">Голяма вила</option>
-                        <option value="">Малка вила</option>
-                        <option value="">Двете вили</option>
-                        <option value="">Друго</option>
+                        <input placeholder="Телефон" type="tel" name="" id="">
 
-                    </select>
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>Какво Ви интересува?</option>
+                            <option value="">Голяма вила</option>
+                            <option value="">Малка вила</option>
+                            <option value="">Двете вили</option>
+                            <option value="">Друго</option>
+
+                        </select>
+                    </div>
+
+                    <div class="second-group">
+
+                        <textarea placeholder="Съобщение" cols="30" rows="10"></textarea>
+                    </div>
+
+
+                </form>
+
+                <div class="contact-middle-display">
+
+                    <div class="addresses-middle-display">
+                        <address class="footer__address">
+                            <p>
+                                община Твърдица
+                            </p>
+                            <p>
+                                село Твърдица
+                            </p>
+                            <p>
+                                улица "Първа" №49
+                            </p>
+                        </address>
+
+
+                        <a href="tel:088456000"> <i class="fas fa-phone"></i> +359 088 456 000</a>
+                        <address>
+                            <a href="mailto:vilamaria@gmail.com"> <i class="fas fa-envelope"></i>vilamaria@gmail.com</a>
+                        </address>
+
+                    </div>
+
+                    <iframe class="map-middle-display"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.8968202848027!2d25.92887131538439!3d42.729993919651626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDQzJzQ4LjAiTiAyNcKwNTUnNTEuOCJF!5e1!3m2!1sbg!2sbg!4v1624813806043!5m2!1sbg!2sbg"
+                        style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+
+                   
                 </div>
 
-                <div class="group">
+            </div>
 
-                    <textarea placeholder="Съобщение" cols="30" rows="10"></textarea>
-                </div>
-
-
-            </form>
             <button class="button">Изпрати</button>
         </section>
 
